@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sudharshan M - Computer Science Engineering student specializing in AI & ML, full-stack developer from Trichy, India">
+    <meta name="keywords" content="Sudharshan M, Computer Science, AI, ML, Full Stack Developer, Trichy, Portfolio">
+    <meta name="author" content="Sudharshan M">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sudharshan M - AI & ML Student | Full Stack Developer">
+    <meta property="og:description" content="Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning with full-stack development expertise">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sudharshan.dev">
+    <meta property="og:image" content="./assets/profile.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sudharshan M - AI & ML Student | Full Stack Developer">
+    <meta name="twitter:description" content="Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning">
+    <meta name="twitter:image" content="./assets/profile.jpg">
+    
+    <title>Sudharshan M - AI & ML Student | Full Stack Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Particle.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sudharshan M",
+      "jobTitle": "Computer Science Engineering Student",
+      "description": "Specializing in Artificial Intelligence and Machine Learning with full-stack development expertise",
+      "email": "sudharshan3b@gmail.com",
+      "telephone": "+91 87783 15769",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Trichy",
+        "addressCountry": "India"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/sudharshanmuthukrishnan24"
+      ],
+      "alumniOf": "K. Ramakrishnan College of Engineering",
+      "knows": ["Python", "Java", "JavaScript", "HTML", "CSS", "SQL", "MySQL"],
+      "image": "./assets/profile.jpg"
+    }
+    </script>
+    
+    <!-- Print Styles -->
+    <style media="print">
+        @page {
+            margin: 0.5in;
+            size: A4;
+        }
+        
+        body {
+            font-size: 12px !important;
+            line-height: 1.4 !important;
+            background: white !important;
+            color: black !important;
+        }
+        
+        /* Hide elements not needed in print */
+        .header,
+        .theme-toggle,
+        .back-to-top,
+        .action-buttons,
+        .print-hide,
+        #particles-js,
+        .floating-elements {
+            display: none !important;
+        }
+        
+        /* Adjust hero section for print */
+        .hero {
+            padding: 20px 0 !important;
+            background: white !important;
+        }
+        
+        .resume {
+          {
+            text-decoration: none;
+             transition: color var(--transition-fast);
+             color:wheat;
+         }
+        }
+        .hero-content {
+            flex-direction: row !important;
+            align-items: center !important;
+            gap: 30px !important;
+        }
+        
+        .profile-image {
+            width: 120px !important;
+            height: 120px !important;
+            margin: 0 !important;
+        }
+        
+        .hero-text h1 {
+            font-size: 24px !important;
+            margin-bottom: 5px !important;
+        }
+        
+        .hero-text .subtitle {
+            font-size: 16px !important;
+            margin-bottom: 5px !important;
+        }
+        
+        .hero-text .location {
+            font-size: 14px !important;
+            margin-bottom: 10px !important;
+        }
+        
+        .badges {
+            gap: 10px !important;
+        }
+        
+        .badge {
+            font-size: 12px !important;
+            padding: 4px 8px !important;
+            border: 1px solid #333 !important;
+            background: white !important;
+            color: black !important;
+        }
+        
+        /* Section adjustments */
+        section {
+            margin: 20px 0 !important;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            font-size: 18px !important;
+            margin-bottom: 10px !important;
+            border-bottom: 1px solid #333 !important;
+            padding-bottom: 5px !important;
+        }
+        
+
+        .timeline-item,
+        .project-card,
+        .education-item,
+        .cert-item {
+            margin: 10px 0 !important;
+            padding: 10px !important;
+            border: 1px solid #ddd !important;
+            border-radius: 5px !important;
+            background: white !important;
+            box-shadow: none !important;
+        }
+        
+        .skills-grid {
+            display: block !important;
+        }
+        
+        .skill-group {
+            margin: 10px 0 !important;
+        }
+        
+        .skill-group h4 {
+            font-size: 14px !important;
+            margin-bottom: 5px !important;
+        }
+        
+        .skill-chips {
+            display: inline !important;
+        }
+        
+        .skill-chip {
+            display: inline !important;
+            font-size: 11px !important;
+            padding: 2px 6px !important;
+            margin: 2px !important;
+            border: 1px solid #666 !important;
+            background: white !important;
+            color: black !important;
+        }
+        
+        /* Contact section */
+        .contact-info {
+            display: block !important;
+        }
+        
+        .contact-item {
+            margin: 5px 0 !important;
+            font-size: 12px !important;
+        }
+        
+        /* Declaration */
+        .declaration {
+            margin-top: 30px !important;
+            page-break-inside: avoid;
+        }
+        
+        .signature {
+            font-family: 'Dancing Script', cursive !important;
+            font-size: 16px !important;
+            margin-top: 20px !important;
+        }
+        
+        .container {
+            max-width: 100% !important;
+            padding: 0 !important;
+        }
+        
+        /* Ensure single page */
+        .projects-grid {
+            display: block !important;
+        }
+        
+        .project-card {
+            margin: 5px 0 !important;
+            padding: 8px !important;
+        }
+        
+        .project-card h4 {
+            font-size: 13px !important;
+            margin-bottom: 3px !important;
+        }
+        
+        .project-card p {
+            font-size: 11px !important;
+            line-height: 1.3 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <!-- <span class="logo-initials">SM</span> -->
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" data-target="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-target="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link" data-target="experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link" data-target="projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link" data-target="skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link" data-target="education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-target="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="profile-section">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-ring"></div>
+                            <img src=".\asset\img.png" alt="Sudharshan M Profile Photo" class="profile-image" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <div class="hero-text">
+                        <h1 class="hero-name">SUDHARSHAN M</h1>
+                        <p class="subtitle"> B.E Computer Science (AI & ML) Student</p>
+                        <p class="location">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Trichy, India
+                        </p>
+                        
+                        <div class="badges">
+                            <span class="badge">AI/ML</span>
+                            <span class="badge">Full Stack</span>
+                            <span class="badge">Cloud</span>
+                        </div>
+                        
+                        <div class="action-buttons print-hide">
+                            <a href="mailto:sudharshan3b@gmail.com" class="btn btn-primary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                Email Me
+                            </a>
+                            <button class="btn btn-secondary">
+                            <a href="https://drive.google.com/file/d/1wsv8w_Dz5wQeDqgga66GBNP-Iq36VTrl/view?usp=sharing" style ="color:white;">Download Resume </a>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <!-- <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14,2 14,8 20,8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10,9 9,9 8,9"></polyline> -->
+                                </svg>
+                                <!-- Download Resume (PDF) -->
+                            </button>
+                            <a href="https://www.linkedin.com/in/sudharshanmuthukrishnan24" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content glass-card">
+                    <p>Dedicated and self-driven Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning, with a strong foundation in full-stack development, problem-solving, and real-world project experience. Passionate about building scalable web solutions and continuously upskilling through certifications and internships.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section" id="experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Java Programming (Certified)</h3>
+                            <h4>VIWISE TECH</h4>
+                            <p class="duration">10 days</p>
+                            <p>Completed certified Java programming internship, gaining hands-on experience with object-oriented programming concepts and software development practices.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Front-End Development</h3>
+                            <h4>VIWISE TECH</h4>
+                            <p class="duration">10 days</p>
+                            <p>Specialized in HTML, CSS, and JavaScript development, creating responsive and interactive web interfaces with modern design principles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card glass-card">
+                        <h4>Aishwarya Silks & Readymades</h4>
+                        <p>Full-stack e-commerce site with WhatsApp order, QR pay, cart system, admin panel.</p>
+                        <div class="project-tags">
+                            <span class="tag">E-commerce</span>
+                            <span class="tag">Full Stack</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card glass-card">
+                        <h4>Blogging Platform</h4>
+                        <p>Post creation, user login, comment system using PHP and MySQL.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card glass-card">
+                        <h4>Plagiarism Detection</h4>
+                        <p>File-based logic/code similarity checker with visual feedback.</p>
+                        <div class="project-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Analysis</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card glass-card">
+                        <h4>Transport Tracking System</h4>
+                        <p>Real-time location update tracking system.</p>
+                        <div class="project-tags">
+                            <span class="tag">Real-time</span>
+                            <span class="tag">Tracking</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card glass-card">
+                        <h4>Smart Trolley System</h4>
+                        <p>IoT-based concept with auto billing.</p>
+                        <div class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card glass-card">
+                        <h4>Food Ordering System</h4>
+                        <p>Online menu and cart-based ordering app.</p>
+                        <div class="project-tags">
+                            <span class="tag">Web App</span>
+                            <span class="tag">E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-group glass-card">
+                        <h4>Languages</h4>
+                        <div class="skill-chips">
+                            <span class="skill-chip">Python</span>
+                            <span class="skill-chip">C</span>
+                            <span class="skill-chip">Java</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group glass-card">
+                        <h4>Web Technologies</h4>
+                        <div class="skill-chips">
+                            <span class="skill-chip">HTML</span>
+                            <span class="skill-chip">CSS</span>
+                            <span class="skill-chip">JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group glass-card">
+                        <h4>Database</h4>
+                        <div class="skill-chips">
+                            <span class="skill-chip">SQL</span>
+                            <span class="skill-chip">MySQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group glass-card">
+                        <h4>Tools</h4>
+                        <div class="skill-chips">
+                            <span class="skill-chip">Microsoft Office</span>
+                            <span class="skill-chip">Power BI</span>
+                            <span class="skill-chip">Excel</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group glass-card">
+                        <h4>Others</h4>
+                        <div class="skill-chips">
+                            <span class="skill-chip">UI/UX basics</span>
+                            <span class="skill-chip">Responsive Web Design</span>
+                            <span class="skill-chip">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-timeline">
+                    <div class="education-item glass-card">
+                        <div class="education-year">2023–2027</div>
+                        <div class="education-content">
+                            <h3>B.E. Computer Science Engineering (AI & ML)</h3>
+                            <h4>K. Ramakrishnan College of Engineering, Trichy</h4>
+                            <p class="gpa">Current CGPA: 8.14</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item glass-card">
+                        <div class="education-year">2022</div>
+                        <div class="education-content">
+                            <h3>Higher Secondary Certificate (HSC)</h3>
+                            <h4>Sri Jeyandra Matriculation Hr. Sec. School, Trichy</h4>
+                            <p class="gpa">Score: 83%</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item glass-card">
+                        <div class="education-year">2020</div>
+                        <div class="education-content">
+                            <h3>Secondary School Leaving Certificate (SSLC)</h3>
+                            <h4>Sri Sankara Matriculation School, Trichy</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section" id="certifications">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="certifications-grid">
+                    <div class="cert-item glass-card">
+                        <h4>Introduction to Design & Analysis of Algorithms</h4>
+                        <p>NPTEL – 2024</p>
+                    </div>
+                    
+                    <div class="cert-item glass-card">
+                        <h4>Cloud Computing</h4>
+                        <p>NPTEL – 2024</p>
+                    </div>
+                    
+                    <div class="cert-item glass-card">
+                        <h4>Big Data Computing</h4>
+                        <p>NPTEL – 2025</p>
+                    </div>
+                    
+                    <div class="cert-item glass-card">
+                        <h4>Universal Human Values</h4>
+                        <p>AICTE Workshop</p>
+                    </div>
+                    
+                    <div class="cert-item glass-card">
+                        <h4>Python & Azure Fundamentals</h4>
+                        <p>Microsoft Learn</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Areas of Interest Section -->
+        <section class="section" id="interests">
+            <div class="container">
+                <h2 class="section-title">Areas of Interest</h2>
+                <div class="interests-content glass-card">
+                    <div class="interest-chips">
+                        <span class="interest-chip">Web Design & Development</span>
+                        <span class="interest-chip">Full Stack Development</span>
+                        <span class="interest-chip">Cloud Services & Hosting</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages Known Section -->
+        <section class="section" id="languages">
+            <div class="container">
+                <h2 class="section-title">Languages Known</h2>
+                <div class="languages-content glass-card">
+                    <div class="language-items">
+                        <div class="language-item">
+                            <h4>Tamil</h4>
+                            <p>Read, Write, Speak</p>
+                        </div>
+                        <div class="language-item">
+                            <h4>English</h4>
+                            <p>Read, Write, Speak</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content glass-card">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Trichy, India</span>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>+91 87783 15769</span>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>sudharshan3b@gmail.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-buttons print-hide">
+                        <a href="mailto:sudharshan3b@gmail.com" class="btn btn-primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Email
+                        </a>
+                        <a href="tel:+918778315769" class="btn btn-secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            Call
+                        </a>
+                        <a href="https://www.linkedin.com/in/sudharshanmuthukrishnan24" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Declaration Section -->
+        <section class="section declaration" id="declaration">
+            <div class="container">
+                <h2 class="section-title">Declaration</h2>
+                <div class="declaration-content glass-card">
+                    <p>I hereby declare that the details provided above are true and correct to the best of my knowledge and belief.</p>
+                    
+                    <div class="declaration-footer">
+                        <div class="declaration-item">
+                            <strong>Place:</strong> Trichy
+                        </div>
+                        <div class="declaration-item">
+                            <strong>Date:</strong> <span id="current-date"></span>
+                        </div>
+                        <div class="declaration-item signature">
+                            <strong>Signature:</strong> <span class="signature-text">SUDHARSHAN M</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer print-hide">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; <span id="current-year"></span> Sudharshan M. All rights reserved.</p>
+                    <p class="footer-note">Built with HTML/CSS/JS</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top print-hide" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18,15 12,9 6,15"></polyline>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
